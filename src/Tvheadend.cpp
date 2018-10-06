@@ -2931,7 +2931,7 @@ DemuxPacket* CTvheadend::DemuxRead ( void )
 void CTvheadend::DemuxClose ( void )
 {
   // If predictive tuning is active, demuxers will be closed automatically once they are expired.
-  if (m_dmx.size() == 1)
+//  if (m_dmx.size() == 1)
     m_dmx_active->Close();
 
   m_playingLiveStream = false;
